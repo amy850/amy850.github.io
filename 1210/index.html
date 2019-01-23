@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 169px;
+            background-image: url(875.jpg);
+            background-repeat: repeat;
+        }
+
+        .container {
+            max-width: px;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /* 背景圖片選單 */
+        #bg_banner {
+            height: 100vh;
+            background-image: url('asx.jpg');
+            background-size: cover;
+            background-position-y: 30%;
+            background-attachment: fixed;
+        }
+
+        #bg_banner .container {
+            height: 100vh;
+            position: relative;
+        }
+
+        #bg_banner .title {
+            margin: 0;
+            position: absolute;
+            top: 1%;
+            right: 0;
+            transform: translateY(0%);
+            color: rgb(255, 231, 126);
+            font-size: 75px;
+            line-height: 120px;
+            letter-spacing: 180px;
+            text-shadow: 2px 3px 4px rgb(136, 1, 1);
+            padding: 0px 500px;
+        }
+
+        /* 主要選單 */
+        #main_nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(29, 82, 5);
+        }
+
+        #main_nav a.nav_link {
+            color: rgb(255, 248, 248);
+            text-decoration: none;
+            display: block;
+            padding: 8px 100px;
+            float: left;
+        }
+
+        /*1*/
+        #section_1 {
+            background-color: rgb(255, 255, 255);
+            padding: 379px 0;
+            background-repeat: repeat;
+        }
+
+        #section_1 .left_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+        }
+
+        #section_1 .left_box img {
+            width: 100%;
+        }
+
+        #section_1 .container .left_box p {
+            font-size: 28px;
+            letter-spacing: 8px;
+            line-height: 45px;
+
+        }
+
+        /*2*/
+
+        #section_2 {
+            background-image: url(112233.jpg);
+            background-repeat: no-repeat;
+            background-color: #333;
+            padding: 300px 0;
+            background-repeat: repeat;
+            text-align: center;
+        }
+
+        #section_2 .left_box {
+            float: left;
+            width: 50%;
+            padding: 0 50px;
+            color: rgb(94, 94, 94);
+        }
+
+        #section_2 .left_box img {
+            width: 100%;
+        }
+
+        #section_2 .container .left_box h1 {
+            font-size: 35px;
+
+        }
+
+        #section_2 .container .left_box p {
+            font-size: 28px;
+            line-height: 38px;
+
+        }
+
+
+
+        /* 3*/
+        #section_03 {
+            background-color: rgb(104, 101, 101);
+            padding: 200px 0;
+            background-repeat: repeat;
+            padding: 0px 250px;
+            background-image: url(112233.jpg);
+            background-repeat: repeat-x;
+        }
+
+        #section_03 .left_box {
+            float: left;
+            width: 33.33%;
+            padding: 0 35px;
+            color: rgb(94, 94, 94);
+        }
+
+        #section_03 .left_box img {
+            width: 248%;
+
+        }
+
+        #section_03 .container1 .left_box h1 {
+            font-size: 35px;
+
+
+        }
+
+        #section_03 .container1 .left_box p {
+            font-size: 23px;
+            line-height: 29px;
+        }
+
+        /* 風味餐 */
+        #sdf01 {
+            color: darkslategrey;
+            letter-spacing: 10px;
+            text-align: center;
+            font-size: 35px;
+            line-height: 268px;
+            background-image: url(789987.jpg);
+            background-repeat: repeat-x;
+        }
+
+        /* 樂趣 */
+        #sdf02 {
+            color: aliceblue;
+            text-align: center;
+            font-size: 28px;
+            line-height: 250px;
+            background-image: url(906.jpg);
+            background-repeat: repeat-x;
+        }
+
+        /*4*/
+        #section_3 .container2 p {
+            font-size: 25px;
+
+        }
+
+        #section_3 {
+            background-color: white;
+            padding: 0px;
+            background-repeat: repeat;
+        }
+
+        #section_3 .left_box {
+            float: left;
+            width: 33.33%;
+            padding: 0 20px;
+            color: rgb(94, 94, 94);
+        }
+
+        #section_3 .left_box p {
+            font-size: 23px;
+            color: aliceblue;
+            background-image: url(885522.jpg);
+            background-repeat: repeat-x;
+        }
+
+        #section_3 .left_box img {
+            width: 100%;
+        }
+
+        #section_3 .container2 {
+            text-align: center;
+        }
+
+        /*5*/
+        #section_4 {
+            background-color: white;
+            padding: 15px 0;
+            background-repeat: repeat;
+        }
+
+        #section_4 .left_box {
+            float: left;
+            width: 33.33%;
+            padding: 0 20px;
+            color: rgb(94, 94, 94);
+        }
+
+        #section_4 .left_box img {
+            width: 100%;
+        }
+
+        /*6*/
+        #section_6 h1 {
+            text-align: center;
+        }
+
+        #section_6 .left_box {
+            float: left;
+            width: 50%;
+            height: 50vh;
+            background-image: url('2.JPG');
+            background-size: cover;
+            color: white;
+            padding: 50px;
+        }
+
+        #section_6 .right_box {
+            float: left;
+            width: 50%;
+            height: 50vh;
+            background-image: url('852.JPG');
+            background-size: cover;
+            padding: 50px;
+        }
+
+        /*footer*/
+        footer {
+            font-size: 22px;
+            background-color: #333;
+            color: #999;
+            padding: 8px 0;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 版面最上方的nav-->
+    <nav id="sub_nav"></nav>
+
+    <!-- 背景圖片+parallax -->
+    <section id="bg_banner">
+        <div class="container">
+            <h1 class="title">
+                呣利亞<br>
+                露營趣
+            </h1>
+        </div>
+    </section>
+
+    <!-- 主要選單+position:sticky -->
+    <nav id="main_nav">
+        <div class="container">
+            <a class="nav_link" href="#section_1">呣利亞簡介</a>
+            <a class="nav_link" href="#section_2">呣利亞露營</a>
+            <a class="nav_link" href="#section_3">呣利亞風味餐</a>
+            <a class="nav_link" href="#section_4">呣利亞樂趣</a>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+    <section id="section_1">
+        <div class="container">
+
+            <div class="left_box">
+                <img src="555.jpg" alt="">
+            </div>
+
+            <div class="left_box">
+
+                <h1><span style="font-family:標楷體;">◈呣利亞簡介◈</span>
+                </h1>
+
+                <p>
+                    <span style="font-family:標楷體;">成立於102年原先為呣利亞工坊，後107年開發為露營區位於苗栗縣泰安鄉的一個村落<br>
+                        與其他露營不太一樣，我們呣利亞露營為主題式，由主題一到主題六<br><br><br>
+                        露營分為【團體包帳】【家庭露營】<br>
+                        【主題式露營】【草皮區】【磁磚區】
+                        我們營區有提供烤肉區域，還有盥洗區、洗滌區等<br><br>
+                        還有體驗多項活動【體驗靜態與動態】<br><br>
+                        靜態活動DIY【手做飾品】【吊飾】【皮雕】【口簧琴】<br>
+                        動態活動體驗【傳統射箭】【搗米-泰雅麻糬】【抓溪蝦】【設陷阱】<br>
+                        多項項目可以選擇!</span>
+                </p>
+
+            </div>
+
+
+            <div class="clearfix">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section_2">
+
+        <div class="container">
+
+            <div class="left_box">
+
+                <h1><span style="font-family:標楷體;">◈呣利亞露營◈</span>
+                </h1>
+
+                <p><span style="font-family:標楷體;">主題式露營<br><br>
+                        【主題一】竹子屋 2-4人 ➢含停車位<font color="#FF0000">$1200</font><br><br>
+                        【主題二】風車屋 2-4人 ➢含停車位<font color="#FF0000">$1200</font><br><br>
+                        【主題三】水上屋 2-4人 ➢含停車位<font color="#FF0000">$1200</font><br><br>
+                        【主題四】閣樓屋 2-4人 ➢含停車位<font color="#FF0000">$1200</font><br><br>
+                        【主題五】草皮區 2-6人 ➢不含停車位<font color="#FF0000">$800</font><br><br>
+                        【主題六】磁磚區 2-6人 ➢不含停車位<font color="#FF0000">$800</font><br><br>
+                    </span>
+                </p>
+
+            </div>
+
+            <div class="left_box">
+                <img src="1720.jpg" alt="">
+            </div>
+
+            <div class="clearfix">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section_03">
+
+        <div class="container1">
+
+            <div class="left_box">
+
+                <h1>露營可家庭單帳、團體包帳<br><br>
+                </h1>
+
+                <h2><span style="font-weight:bold;">△露營須知</span><br><br>
+                </h2>
+
+                <p>
+                    <span style="font-family:標楷體;">
+                        ❶進出營地請減速慢行。<br><br>
+                        ❷入營早上11:00至隔日11:30退營。<br><br>
+                        ❸若需要體驗及訂購風味餐，請於前一日來電訂購及洽詢。<br><br>
+                        ❹營區無提供任何營具，請自備營具(帳篷、睡袋...等)請見諒。<br><br>
+                        ❺就寢時間為23:00後勿大聲喧嘩。<br><br>
+                        ❻營區內熱水開放熱水時間為早上6-8，晚上18-23。<br><br>
+                        ❼草地或磁磚區有使用烤具，請離地面2尺。<br><br>
+                        ❽營區內勿施放任何煙火。<br><br>
+                        ❾營區內屬於空間較小，請注意自身及孩童安全。<br><br>
+                        ❿訪客需酌收清潔費用，規定離營21:00整離營。<br><br>
+                        謝謝您的配合。<br><br><br><br></span>
+                    <p>
+
+            </div>
+
+        </div>
+
+        <div class="clearfix">
+        </div>
+
+        <div id="sdf01">
+
+            <h1><span style="background-color:rgb(250, 248, 245);margin-right:px;">◈呣利亞風味餐◈</span>
+            </h1>
+
+        </div>
+
+    </section>
+
+    <section id="section_3">
+
+        <div class="container2">
+            <p><span style="font-family:DFKai-sb;">若訂購風味餐，需要前一日來電洽詢，訂購桌為單位，是屬於無菜單出菜，都依泰雅小吃為主，為五菜一湯。</span>
+            </p>
+        </div>
+
+        <div class="left_box">
+            <img src="azs.jpg" alt="">
+
+            <h1>原民烤山豬肉片
+            </h1>
+
+            <p>
+                <span style="font-family:DFKai-sb;">➢外皮烤酥脆,外酥內軟.品嚐到烤山豬肉的真正風味</span>
+            </p>
+
+        </div>
+
+
+        <div class="left_box">
+            <img src="1388.jpg" alt="">
+
+            <h1>泰雅刺蔥煎蛋
+            </h1>
+
+            <p>
+                <span style="font-family:DFKai-sb;">➢用刺蔥剪碎，鋪陳在蛋中厚實的煎了濃濃撲鼻的刺蔥煎蛋</span>
+            </p>
+
+        </div>
+
+        <div class="left_box">
+            <img src="000.jpg" alt="">
+
+            <h1>手工竹筒飯
+            </h1>
+
+            <p>
+                <span style="font-family:DFKai-sb;">➢現砍竹子，裝填著香噴糯米，一頗開竹葉清香味撲鼻而來</span>
+            </p>
+
+        </div>
+
+        <div class="clearfix">
+        </div>
+
+        <div id="sdf02">
+
+            <h1>◈呣利亞樂趣◈
+            </h1>
+
+        </div>
+
+    </section>
+
+    <section id="section_6">
+
+        <div class="left_box">
+        </div>
+
+        <div class="right_box">
+        </div>
+
+        <div class="clearfix">
+        </div>
+
+        </secction>
+
+        <footer>
+
+            <div class="container">
+                ☎0900-000-000<br>
+                ⌂苗栗縣泰安鄉<br>
+                ✉AA0900000000@yahoo.com.tw<br>
+            </div>
+
+        </footer>
+
+
+
+
+
+</body>
+
+</html>
